@@ -410,7 +410,7 @@ section#home {
 .fa-github:focus,
 .fa-github:active {
     color: #000;
-    background-color: #FFF;
+    background-color: #fdfdfd;
     border-radius: 4px;
 }
 
