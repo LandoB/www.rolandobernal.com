@@ -1,0 +1,227 @@
+/*!
+ * Name: 	Resume - Portfolio
+ * Version: 1.0
+ * Updated: 8/14/2015
+ * Website:	https://github.com/LandoB/landob.github.io
+ * Author:	Lando B | Web Solutions
+ * Type:	Style - General
+ */
+
+/*-----------------------
+	Add-on's
+------------------------*/
+.uppercase{text-transform:uppercase;}
+.margin-md {margin:30px 0px;}
+.margin-lg {margin:110px 0px;}
+.padding-sm {padding:15px 0px;}
+.padding-md {padding:50px 0px;}
+.padding-lg {padding:100px 0px;}
+
+
+/*-----------------------
+	General
+------------------------*/
+body {
+	font-family: 'Oswald', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+a, img, span, h3, p, i, li, .card-expand, .social-box-container, .btn{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+p {
+
+}
+a {
+	color:#FFF;
+}
+a:hover {
+	color:#FFF;
+}
+
+
+/*-----------------------
+	Landing
+------------------------*/
+section#image {
+	position: relative;
+	height: 900px;
+	min-height: 500px;
+	width: 100%;
+	background: url(../img/main-bg.jpg) no-repeat center;
+	text-align: center;
+	overflow: hidden;
+	margin-top: -100px;
+}
+
+.wrapper {
+	text-align: center;
+	color: rgba(23, 64, 90, 1);
+}
+
+
+@media (max-width: 767px), screen and (max-height: 600px) {
+
+	section#image {
+		position: relative;
+	    height: 650px;
+	    min-height: 500px;
+	    width: 100%;
+	    background: url(../img/main-bg.jpg) no-repeat center;
+	    background-size: 85% !important;
+	    text-align: center;
+	    overflow: hidden;
+	    margin-top: -150px;
+	}
+}
+
+@media (min-width : 300px) and (max-width : 568px) {
+
+	section#image {
+		position: relative;
+		height: 800px;
+		min-height: 500px;
+		width: 100%;
+		background: url(../img/main-bg.jpg) no-repeat center;
+		background-size: 85% !important;
+		text-align: center;
+		overflow: hidden;
+		margin-top: -90px;
+	}
+
+}
+
+
+/*-----------------------
+	Landing Social
+------------------------*/
+.social {
+	background:rgba(23, 64, 90, 1);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	display: block;
+	z-index: 2;
+}
+.social ul {
+	margin: 0;
+	padding:0;
+}
+.social ul li {
+	display:inline-block;
+	list-style-type: none;
+	padding: 20px 20px
+}
+
+.social ul li a i.fa {
+	font-size: 30px;
+}
+
+#linkedin:hover,
+#linkedin:focus,
+#linkedin:active,
+.fa-linkedin:hover,
+.fa-linkedin:focus,
+.fa-linkedin:active {
+    color: #FFF;
+    background-color: #007bb6;
+    border-radius: 4px;
+}
+
+#twitter:hover,
+#twitter:focus,
+#twitter:active,
+.fa-twitter:hover,
+.fa-twitter:focus,
+.fa-twitter:active {
+    color: #FFF;
+    background-color: #55acee;
+    border-radius: 4px;
+}
+
+
+#google-plus:hover,
+#google-plus:focus,
+#google-plus:active,
+.fa-google-plus:hover,
+.fa-google-plus:focus,
+.fa-google-plus:active {
+    color: #FFF;
+    background-color: #dd4b39;
+    border-radius: 4px;
+}
+
+#github:hover,
+#github:focus,
+#github:active,
+.fa-github:hover,
+.fa-github:focus,
+.fa-github:active {
+    color: #FFF;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+
+/*-----------------------
+	Buttons
+------------------------*/
+.btn {
+	border:0;
+	border-radius:0;
+}
+.btn-about {
+	border: 2px solid #51a1d6;
+	padding: 10px 20px;
+	font-size: 20px;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.btn-about:hover, .btn-about:focus {
+	border: 2px solid #51a1d6;
+	color: #FFF;
+	background: #51a1d6;
+}
+.btn-work {
+	border: 2px solid #51a1d6;
+	padding: 10px 20px;
+	font-size: 15px;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin: 0px 5px;
+	background: #FFF;
+}
+.btn-work:hover, .btn-work:focus {
+	border: 2px solid #51a1d6;
+	color: #FFF;
+	background: #51a1d6;
+}
+.btn-contact {
+	border: 2px solid #51a1d6;
+	padding: 10px 20px;
+	font-size: 20px;
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	background: transparent;
+}
+.btn-contact:hover, .btn-contact:focus {
+	border: 2px solid #51a1d6;
+	color: #FFF;
+	background: #51a1d6;
+}
+.social-btn {
+	font-size:13px!important;
+}
+.is-checked{
+	border: 2px solid #51a1d6;
+	color: #FFF;
+	background: #51a1d6;
+}

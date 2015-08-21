@@ -10,55 +10,83 @@
 	<title>Lando B | Web Solutions</title>
 
 	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-
-
-	<!-- Progress Bar Style -->
-	<link href="css/progress.css" rel="stylesheet">
-
-	<!-- Animations -->
-	<link href="css/animate.css" rel="stylesheet">
-
-	<!-- General Style -->
-	<link href="style.css" rel="stylesheet">
-
-	<!-- Owl Carousel -->
-	<link href="css/owl.carousel.css" rel="stylesheet">
-	<link href="css/owl.theme.css" rel="stylesheet">
-	<link href="css/owl.transitions.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
 	<!--Fonts-->
 	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-	<link href="css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<!-- <link rel="shortcut icon" href="img/LandoB-Logo-FavIcon.ico" type="image/x-icon" /> -->
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+	
+	<!-- General Style -->
+	<!-- <link href="assets/css/style2.css" rel="stylesheet"> -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
 <body>
 
-<header>
-<!-- Main landing start -->
-	<section id="home" class="landing">
-		<!-- Social container start -->
-		<div class="social">
-		<ul>
-			<li id="twitter"><a href="http://twitter.com/jrolandobernal"><i class="fa fa-twitter"></i></a></li>
-			<li id="google-plus"><a href="https://plus.google.com/+RolandoBernal"><i class="fa fa-google-plus"></i></a></li>
-			<li id="linkedin"><a href="https://www.linkedin.com/in/jrolandobernal"><i class="fa fa-linkedin"></i></a></li>
-			<li id="github"><a href="https://github.com/LandoB/landob.github.io"><i class="fa fa-github"></i></a></li>
-		</ul>
-
+	<div id="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<h1>Lando B | Web Solutions</h1>
+					<h2 class="subtitle">We are working hard to improve our website and we will be ready to launch it after</h2><br>
+					<h2><i class="fa fa-angle-double-down"></i></h2>
+					<div id="countdown"></div>
+					<form class="form-inline signup" role="form">
+					  <div class="form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+					  </div>
+					  <button type="submit" class="btn btn-primary">Get notified!</button>
+					</form>     
+				</div>
+			</div>
+			<!-- Main landing start -->
+			<div>
+				<section id="home" class="landing">
+					<div class="row landing-message">
+					</div>
+					<div class="landing-bg"></div>
+					<!-- Social container start -->
+					<div class="social">
+					<ul>
+						<li id="twitter"><a href="http://twitter.com/jrolandobernal"><i class="fa fa-twitter"></i></a></li>
+						<li id="google-plus"><a href="https://plus.google.com/+RolandoBernal"><i class="fa fa-google-plus"></i></a></li>
+						<li id="linkedin"><a href="https://www.linkedin.com/in/jrolandobernal"><i class="fa fa-linkedin"></i></a></li>
+						<li id="github"><a href="https://github.com/LandoB/landob.github.io"><i class="fa fa-github"></i></a></li>
+					</ul>
+					</div>
+					<!-- Social container end -->
+				</section>
+			</div><br><br>
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+						<p class="copyright">Copyright &copy; 2015 - <a href="http://www.rolandobernal.com/">Lando B | Web Solutions</a></p>
+				</div>
+			</div>      
 		</div>
-		<!-- Social container end -->
-	</section>
-</header>
-<!-- Main landing end -->
+	</div>
 
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.countdown.min.js"></script>
+	<script type="text/javascript">
+	  $('#countdown').countdown('2015/11/09', function(event) {
+		$(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'));
+	  });
+	</script>
 </body>
 </html>
