@@ -123,7 +123,7 @@ a:after {
 }
 form.signup input  {
 	height: 42px;
-	width: 300px;
+	width: 250px;
 	border-radius: 0;
 	border: none;
 }
@@ -132,6 +132,13 @@ form.signup button.btn {
 }
 form.signup input.form-control:focus {
 	border-color: #fd680e;
+}
+
+@media (min-width: 768px) {
+.form-inline .form-control {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 
